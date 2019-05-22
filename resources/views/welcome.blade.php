@@ -38,8 +38,8 @@
             </div>
         </nav>
         <section class="mx-5 text-center" id="intro">
-            <div class="px-5">
-                <p class="m-5 p-5">このプロジェクトは東京デザインテクノロジーセンター専門学校に授業のプロジェクトです。このプロジェクトはおそよ２ヶ月をかけて完成しました。</p>
+            <div class="p-5 col">
+                <p class="m-5 p-5">このプロジェクトは東京デザインテクノロジーセンター専門学校に授業のプロジェクトです。このプロジェクトはおそよ２ヶ月で完成する予定になっております。</p>
             </div>
         </section>
         <section class="" id="skills">
