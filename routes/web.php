@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/wall', 'WallController@index')->name('wall');
 
 /**
  * Login Route(s)

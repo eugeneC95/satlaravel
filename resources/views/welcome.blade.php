@@ -15,18 +15,26 @@
                 color: grey!important;
                 text-decoration: none;
             }
+            header{
+                position: fixed!important;
+                z-index: 9;
+                top:0%;
+            }
+            #logo{
+                margin-top: 150px;
+            }
             footer{
                 background-color: #333;
             }
         </style>
     </head>
     <body class="bg-light">
-        <header class="col-md-4 my-5 mx-auto">
-            <h1 class="py-5 " id="logo">
-                <img class="col my-5 mx-auto" src="{{URL::asset('/image/logo.png')}}" alt="Logo" height="130" width="520">
+        <div class="col-md-4 pt-5 my-5 mx-auto">
+            <h1 class="py-5 mb-5 " id="logo">
+                <img class="col my-5 mx-auto" src="{{URL::asset('/image/logo.png')}}" alt="Logo" height="120" width="550">
             </h1>
-        </header>
-        <nav class="navbar navbar-expand-lg bg-white text-uppercase shadow-sm">
+        </div>
+        <header class="navbar navbar-expand-lg bg-white text-uppercase shadow-sm col">
             <div class="container px-0">
                 <div><a href="#logo">SNS</a></div>
                 <div>
@@ -39,7 +47,7 @@
                 <div>
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/home') }}">ホーム</a>
+                            <a href="{{ url('/wall') }}">ホーム</a>
                         @else
                             <a href="{{ route('login') }}">ログイン</a>
                             @if (Route::has('register'))
@@ -49,7 +57,7 @@
                     @endif
                 </div>
             </div>
-        </nav>
+        </header>
         <section class="mx-auto text-center" id="intro">
             <div class="p-5 col">
                 <h2 class="py-5 mt-5">プロジェクト紹介</h2>
