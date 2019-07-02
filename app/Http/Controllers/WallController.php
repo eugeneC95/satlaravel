@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Request\inputpost;
 use Illuminate\Support\Facades\Auth;
 use App\Post;
 use App\User;
@@ -42,19 +43,21 @@ class WallController extends Controller
             ->orWhere('user',Auth::user()->name)
             ->orderBy('created_at','desc')
             ->get();
-
-
-        // foreach($users as $user){
-        //     print_r($user);
-        // }
-
-        // foreach ($posts as $post) {
-        //     $insert = false;
-
-        //     if($insert == true){ $users[] = User::where('name' , $post->user )->get();}
-        //     // $users[] = User::where('name' , $post->user )->value('name');
-
-        // }
         return view('wall' , ['posts' => $posts ]);
+    }
+    public function store(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'post_body' => 'required|unique:posts|max:255',
+            'post_user' => 'required',
+        ]);
+        var_dump($validator);
+        if ($validator->fails()) {
+            return redirect('post/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+        // Store the blog post...
     }
 }

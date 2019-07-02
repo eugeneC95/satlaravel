@@ -5,8 +5,34 @@ body{
 
 }
 
+.today_life textarea{
+    width: 87%;
+    border-radius: 9px;
+    padding: 5px 10px;
+}
+
+.today_life .title{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.today_life .post_submit{
+    margin-left: 1%;
+}
+.today_life .post_submit button{
+    border: 0px;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+.today_life textarea,
+.today_life .post_submit{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .wall_content{
-    margin: 10px 0;
+    margin: 20px 0 40px 0;
 }
 
 .wall_profile_img{
@@ -25,6 +51,27 @@ body{
     line-height: 1;
 }
 
+.wall_content_info{
+    margin-left: 10px;
+}
+
+.wall_user,
+.wall_date{
+    display: inline-block;
+}
+
+.wall_date{
+    margin-left: 10px;
+    font-size: 80%;
+}
+
+.wall_body{
+    margin-top: 10px;
+}
+
+.wall_like{
+    margin-top: 7px;
+}
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

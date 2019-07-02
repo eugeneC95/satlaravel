@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 
 Route::get('/wall', 'WallController@index')->name('wall');
+Route::post('/wall', 'WallController@store');
 
 /**
  * Login Route(s)
