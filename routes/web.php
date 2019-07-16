@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::get('/wall', 'WallController@index')->name('wall');
 Route::post('/wall', 'WallController@store');
 
+
+Route::get('/user/{id}', 'ProfileController@show')->name('profileshow');
+Route::post('/user/{id}', 'ProfileController@update');
+Route::post('/userdelete','ProfileController@delete');
+Route::get('/userfollow','ProfileController@showfollow');
+Route::post('/userfollow','ProfileController@follow_unfollow');
 /**
  * Login Route(s)
  */

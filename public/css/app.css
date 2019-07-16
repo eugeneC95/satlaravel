@@ -5,16 +5,25 @@ body{
 
 }
 
+.today_life {
+    border: 1px solid lightgray;
+    border-radius: 1px;
+}
+
 .today_life textarea{
-    width: 87%;
-    border-radius: 9px;
+    width: 85%;
     padding: 5px 10px;
+    margin-left: auto;
+    border-radius: 3px;
+    border:0px;
 }
 
 .today_life .title{
-    margin-left: 10px;
+    padding:5px 0px 10px 10px;
+    top:-1px;
     margin-bottom: 5px;
     font-weight: bold;
+    background-color: #ebeaea;
 }
 
 .today_life .post_submit{
@@ -45,14 +54,20 @@ body{
 }
 
 .wall_content_info,
-.wall_profile_img{
+.wall_profile_img,
+.wall_content_delete{
     display: inline-block;
     vertical-align: top;
     line-height: 1;
 }
+.wall_content_delete{
+    margin-top: 15px;
+}
 
 .wall_content_info{
     margin-left: 10px;
+    width: 80%;
+    max-width: 80%;
 }
 
 .wall_user,
@@ -72,6 +87,146 @@ body{
 .wall_like{
     margin-top: 7px;
 }
+
+.liked_form,
+.liked_users{
+    display: inline-block;
+}
+.liked_users{
+    font-size: 11px;
+    padding-left: 20px;
+}
+.liked_btn_unlike,
+.liked_btn{
+    background: none;
+    color:#3490dc;
+    border:none;
+    padding: 0!important;
+    font:inherit;
+    cursor:pointer;
+}
+.liked_btn_unlike{
+    color:grey;
+    text-decoration: line-through;
+}
+.liked_btn:hover{
+    color:#1d68a7;
+}
+.liked_btn_unlike:hover{
+    color:#3490dc;
+}
+.wall_content_delete button{
+    color: white;
+    background-color: #f87575;
+    border: 0px;
+    border-radius: 3px;
+    padding: 5px 13px;
+}
+.wall_content_delete button:hover{
+    background-color: #ff4f4f;
+}
+
+.profile{
+    background-color: #f6f6f6;
+    padding: 10px;
+}
+
+.user_img,.user_info{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user_img{
+    padding-left: 10px;
+}
+.user_info{
+    margin-left: 20px;
+    width:50%;
+}
+
+.user_name div,
+.user_email div,
+.user_desc div{
+    font-size: 12px;
+}
+
+.user_name input,
+.user_email input,
+.user_desc textarea{
+    border:0px;
+    background-color: #e3e3e3;
+    border-radius: 3px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.user_desc textarea{
+    height:auto;
+}
+
+.btn_group{
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.user_update_btn button{
+    margin-left: 69%;
+    border: 0px;
+    background-color: #08c408;
+    color:white;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+.user_update_btn button:hover{
+    background-color: #25d125;
+}
+.user_img_btn button{
+    border: 0px;
+    background-color: #dda43c;
+    color:white;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+.follow_btn,
+.unfollow_btn{
+    border: 0px;
+    background-color: #e1a355;
+    color: white;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+.unfollow_btn:hover{
+    background-color: #d5aa75;
+}
+.message{
+    margin-top: 20px;
+    border-bottom: 1.5px solid lightgrey;
+}
+
+.user_img_btn,
+.logout{
+    display:inline-block;
+}
+.logout{
+    margin-left: auto;
+}
+
+
+.logout button{
+    background-color: #ff4f4f;
+    color: white;
+    border: 0px;
+    border-radius: 3px;
+    padding: 3px 10px;
+}
+
+.logout a:hover button{
+    background-color: #ff8787;
+}
+
+
+
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
